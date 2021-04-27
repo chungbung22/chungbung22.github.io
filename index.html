@@ -1,150 +1,195 @@
+  
+
 <!DOCTYPE html>
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-      <title>Christopher Chung | UX/UI Design, Data Visualization, Prototyping</title>
-	  <link rel="shortcut icon" href="images/favicon.ico?" />
-      <link rel="stylesheet" type="text/css" href="css/main.css" />
-      <link rel="stylesheet" type="text/css" href="css/webfont.css" />
-      <meta charset=utf-8 />
-      <meta name="viewport" content="width=1200" />
-      <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-      <script type="text/javascript" src="js/script.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- disable smart zoom /-->  
+<link rel="stylesheet" href="wp-content/themes/CC/style.css" type="text/css" />
+<link rel="stylesheet" type="text/css" media="screen" href="wp-content/themes/CC/style.css" />
+<link rel="pingback" href="xmlrpc.php" />
+
+<title>Christopher Chung | UX/UI</title>
+<link rel="shortcut icon" href="wp-content/themes/CC/imgs/favicon.ico?" />
+<meta name="description" content="Christopher Chung is a UX/UI designer who has been crafting delightful user experiences since 2014. He is currently a product designer at Boeing, based in Seattle, WA."/>
+<link rel="canonical" href="index.html" />
+<link rel="next" href="page/2/index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Christopher Chung" />
+<meta property="og:description" content="Christopher Chung is a UX/UI designer who has been crafting delightful user experiences since 2014. He is currently a product designer at Boeing, based in Seattle, WA." />
+<meta property="og:url" content="index.html" />
+<meta property="og:site_name" content="Christopher Chung" />
+
+<link rel='dns-prefetch' href='http://ajax.googleapis.com/' />
+<link rel='dns-prefetch' href='http://platform.twitter.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+
+<link rel='stylesheet' id='sb_instagram_styles-css'  href='wp-content/plugins/instagram-feed/css/sb-instagram-2-2.min2f91.css?ver=2.4.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min0606.css?ver=5.2.9' type='text/css' media='all' />
+<link rel='stylesheet' id='ctf_styles-css'  href='wp-content/plugins/custom-twitter-feeds/css/ctf-styles4e44.css?ver=1.3' type='text/css' media='all' />
+<script type='text/javascript' src='ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min0606.js?ver=5.2.9'></script>
+<link rel='https://api.w.org/' href='wp-json/index.html' />
+<link rel='shortlink' href='http://wp.me/' />
+ 
+    
+<!--font--> 
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+
+<!--jQuery--> 
+    <script type="text/javascript" src="cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="wp-content/themes/CC/js/jquery.easing.1.3.js"></script>
+    
+<!--IE understand media@--> 
+    <script type="text/javascript" src="wp-content/themes/CC/js/css3-mediaqueries.js"></script>    
+    
+    
+
+<!--Scroll to--> 
+	<script>
+		function goToByScroll(id){
+     			$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+		}
+    </script>
+    
+<!--Mix it up (portfolio sorting effect)-->
+    <script type="text/javascript" src="wp-content/themes/CC/js/jquery.mixitup.js"></script>  
+    <script>
+	
+	$(function(){
+		$('#portfolioGrid').mixitup({
+			showOnLoad: 'all',
+			transitionSpeed: 600	
+	    });     
+    });
+	
+	</script>
+    
+<!--Logo text--> 
+    <script>
+	$(document).ready(function(){
+
+			$("#logoText").animate({opacity:1}, 300);
+
+	});
+    </script>
+
+<!--Portfolio piece title--> 
+    <script>
+	
+	$(document).ready(function(){
+	     
+		 $("#portfolioGrid li").each(function(){
+			 
+			  $(this).hover(function(){
+				  $(this).find(".portfolioBoxTitle").stop().animate({opacity:1, bottom:20}, 300);
+				  }, function(){
+				  $(this).find(".portfolioBoxTitle").stop().animate({opacity:0, bottom:-20}, 300);
+			  });
+			  
+	     });
+	});
+	
+    </script>
+    
+
 </head>
 
-<body id="0" class="home paused firstTime">
+<body class="Site">
 
 
 
-</style>
+<header id="header">
+   <div class="container">
+                      
+                      
+                      <!-- Flipped logo -->
+                      <div id="logoContainer">
+                          <a href="index.html">
+                              <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                  <div class="flipper">
+                                      <div class="logoFront">
+                                          <img id="logo" src="wp-content/themes/CC/imgs/CC_logo_flip01.png" alt="logo" />
+                                      </div>
+                                      <div class="logoBack">
+                                          <img id="logo" src="wp-content/themes/CC/imgs/CC_logo_flip02.png" alt="logo" />
+                                      </div>
+                                  </div>
+                              </div>
+							  <div id="logoText">CHRISTOPHER CHUNG</div> 
+                          </a>
+						
+                      </div>
+					  
+                                                   
+          
+                      
+                   <div id="nav">
+                            
+                                <ul >
 
-      <div id="borderTop" class="loader"></div>
-	  
-      <header class="slideHeader">
-            <div class="wrapper">
-                  <ul id="topMenu" class="animated slideHeader">
-                        <li class="active animated fadeInNav"><a href="index2.html"><span>//</span>Home</a></li>
-                        <li class="animated fadeInNav"><a href="about.html"><span>//</span>About Me</a></li>
-						<li class="animated fadeInNav"><a href="https://www.linkedin.com/in/christopherchungx" target="_blank"><span>//</span>Contact</a></li>
-						<li class="animated fadeInNav"><a href="resume.html"><span>//</span>Resume</a></li>
+                                <li id="current">
+                                        <a class="hvr-underline-from-left" href="index.html">Work</a>
+                                </li>
 
-                  </ul>
-				  
-            </div>
-      </header>
+                                <li>
+                                        <a class="hvr-underline-from-left" href="about/index.html">About Me</a>
+                                </li>
+                             
+                                </ul>
+                        
+                    </div><!--end of nav-->
+                            
+                            
+                            
+                            
+	</div><!--end of container-->
+          </header><!--end of header-->
+ 
+ <div id="main">
+                                    
+   <section id="secondSectionIndex">
+   
 
-      <div class="spacer"></div>
+        <div class="container">
+        
+           <div class="portfolioGallery">
+                
+				<ul id="portfolioGrid">
+					<li class="column three responsive-padding mix app 3d"><a href="portfolio/convey/index.html"><div class="portfolioBox"><div class="portfolioConvey"><div class="portfolioBoxTitle">Convey</div></div></div></a></li>
+					
+                    <li class="column three responsive-padding mix web"><a href="portfolio/maintenance/index.html"><div class="portfolioBox"><div class="portfolioMaintenance"><div class="portfolioBoxTitle">Airplane Maintenance</div></div></div></a></li>
+					
+					<li class="column three responsive-padding mix web"><a href="portfolio/canvas/index.html"><div class="portfolioBox"><div class="portfolioCanvas"><div class="portfolioBoxTitle">Canvas Redesign </div></div></div></a></li>
+
+                    <li class="column three responsive-padding mix app 3d"><a href="portfolio/skry/index.html"><div class="portfolioBox"><div class="portfolioSkry"><div class="portfolioBoxTitle">SKRY
+					</div></div></div></a></li>
+					
+					<li class="column three responsive-padding mix web"><a href="portfolio/retail/index.html"><div class="portfolioBox"><div class="portfolioRetail"><div class="portfolioBoxTitle">TMO Prepaid</div></div></div></a></li>
+                     
+					<li class="column three responsive-padding mix app"><a href="portfolio/beacon/index.html"><div class="portfolioBox"><div class="portfolioBeacon"><div class="portfolioBoxTitle">BWS UX Homepage
+					</div></div></div></a></li>
+					
+					<li class="column three responsive-padding mix web"><a href="portfolio/postpaid/index.html"><div class="portfolioBox"><div class="portfolioPostpaid"><div class="portfolioBoxTitle">TMO Postpaid</div></div></div></a></li>					
+
+                    <li class="column three responsive-padding mix app 3d"><a href="portfolio/wiring/index.html"><div class="portfolioBox"><div class="portfolioWiring"><div class="portfolioBoxTitle">Wire Bundle Assembly</div></div></div></a></li>
+                            
+                 </ul>
+           
+           </div><!--end of portfolioGallery-->
+           
+      </div><!--end of container-->
       
+</section>
 
-      <div id="pageContent">
-      
-      <div id="backToTop"><img src="images/backTop.png" /><p>TOP</p></div>
-
-      <section class="animated onManHome onManShowContent onManShow">
-            <div id="maskTitle" class="wrapper animated">
-                  <h2 class="animated fadeInOnManHome">Chungware</h2>
-                  <h3 class="animated fadeInBaseLineHome">UX &amp UI Design <strong>//</strong> Data Visualization <strong>//</strong> Prototyping <strong>//</strong> by Christopher Chung</h3>
-            </div>
-      </section>
-
-      <div class="wrapper">
-
-            <section id="container">
-            <ul class="thumb">
-                  <li class="thumbFade bounceTop1">
-                        <a href="thumb01.html" class="fadeHome" onClick="goToByScroll('0')">
-                              <div class="thumbContainer">
-                                    <div class="mask"></div>
-                                    <img src="images/thumb01.jpg" />
-                              </div>
-                              <span class="fadeInDown">Convey<p>3d Prototype & UI Design</p></span>
-                        </a>
-                  </li>
-                  <li class="thumbFade bounceTop2">
-                        <a href="thumb02.html" class="fadeHome" onClick="goToByScroll('0')">
-                              <div class="thumbContainer">
-                                    <div class="mask"></div>
-                                    <img src="images/thumb02.jpg" />
-                              </div>
-                              <span class="fadeInDown">U.S. Population Migration<p>Data Visualization</p></span>
-                        </a>
-                  </li>
-                  <li class="thumbFade bounceTop3">
-                        <a href="thumb03.html" class="fadeHome" onClick="goToByScroll('0')">
-                              <div class="thumbContainer">
-                                    <div class="mask"></div>
-                                    <img src="images/thumb03.jpg" />
-                              </div>
-                              <span class="fadeInDown">EcoCar3 Steering Gauge<p>Data Visualization</p></span>
-                        </a>
-                  </li>
-
-                  <li class="thumbFade bounceTop4">
-                        <a href="thumb04.html" class="fadeHome" onClick="goToByScroll('0')">
-                              <div class="thumbContainer">
-                                    <div class="mask"></div>
-                                    <img src="images/thumb04.jpg" />
-                              </div>
-
-                              <span class="fadeInDown">Canvas Redesign<p>UI Design</p></span>
-                        </a>
-                  </li>
-
-                  <li class="thumbFade bounceBottom1">
-                        <a href="thumb05.html" class="fadeHome" onClick="goToByScroll('0')">
-                              <div class="thumbContainer">
-                                    <div class="mask"></div>
-                                    <img src="images/thumb05.jpg" />
-                              </div>
-                              <span class="fadeInDown">Blasty Skies<p>Web Prototype</p></span>
-                        </a>
-                  </li>
-                  <li class="thumbFade bounceBottom2">
-                        <a href="thumb06.html" class="fadeHome" onClick="goToByScroll('0')">
-                              <div class="thumbContainer">
-                                    <div class="mask"></div>
-                                    <img src="images/thumb06.jpg" />
-                              </div>
-                              <span class="fadeInDown">Motorcycle Navigation<p>UX & UI Design</p></span>
-                        </a>
-                  </li>
-                  <li class="thumbFade bounceBottom3">
-                        <a href="thumb07.html" class="fadeHome" onClick="goToByScroll('0')">
-                              <div class="thumbContainer">
-                                    <div class="mask"></div>
-                                    <img src="images/thumb07.jpg" />
-                              </div>
-                              <span class="fadeInDown">Squirrel Bottle Opener<p>3D Prototype</p></span>
-                        </a>
-                  </li>
-                  <li class="thumbFade bounceBottom4">
-                        <a href="thumb08.html" class="fadeHome" onClick="goToByScroll('0')">
-                              <div class="thumbContainer">
-                                    <div class="mask"></div>
-                                    <img src="images/thumb08.jpg" />
-                              </div>
-                              <span class="fadeInDown">Pandamedics<p>UX Design</p></span>
-                        </a>
-                  </li>
-
-            </ul>
-            <p class="spacer"></p>
-            </section>
-      </div>
+</div><!--end of main-->
 
 
-
-<footer>
-      <div class="wrapper">
-	  
-            <div class="copyright">
-			
-			 <img id="unique" src="images/logo.png" height="50" width="50"/>
-                  <p>&copy; 2019</p>
-				  
-            </div>
-
-      </div>
-</footer>
 
 </body>
+
 </html>
+

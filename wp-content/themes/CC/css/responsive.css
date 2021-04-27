@@ -1,0 +1,199 @@
+/****************************** 
+           Responsive
+******************************/
+
+.container {
+	max-width: 1120px;
+	margin: 0 auto;	
+	clear: both;
+}
+
+.column, .columns{ float: left; position: relative; min-height: 1px; }
+
+.one-ninth{ width: 11.111%; }
+.one-eighth{ width: 12.5%; }
+.one-seventh{ width: 14.285%; }
+.one-fifth{ width: 20%; }
+.two-fifth{ width: 40%; }
+.three-fifth{ width: 60%; }
+.four-fifth{ width: 80%; }
+
+.one{ width: 8.333% }
+.two{ width: 16.666%; }
+.three{ width: 25%; }
+.four{ width: 33.333%; }
+.five{ width: 41.666%; }
+.six{ width: 50%; }
+.seven{ width: 58.334%; }
+.eight{ width: 66.667%; }
+.nine { width: 75%; }
+.ten { width: 83.334%; }
+.eleven { width: 91.667%; }
+.twelve{ width: 100%; }
+
+.contentWrapper_about, .contentWrapper_portfolio, .contentWrapper_small  {width: 66.667%; margin: 0 auto; position: relative;}
+.contentWrapper_small {height: 300px;}
+.contentWrapper {width: 80%; margin: 0 auto;}
+.contentLeft {width: 70% ;}
+.contentRight {width: 30%; }
+
+    /* This makes the element stays in that width of grid, despite padding or borders being applied.*/
+	*, *:after, *:before {
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	}
+	.responsive-padding { padding: 0 5px;}
+    .responsive-padding10 { padding: 0 10px;}
+	.responsive-paddingRight20 { padding-right: 20px;}
+	.responsive-paddingRight30 { padding-right: 30px;}
+
+    .twoColumnWrapper {margin: 0 -10px;}
+
+.clear{ display: block; clear: both; visibility: hidden; line-height: 0; height: 0; zoom: 1; }
+
+html body{ min-width: 300px; }
+
+/*--- desktop medium---*/
+@media only screen and (max-width: 1180px) {
+	body .container{ width: 91.667%; margin:0 auto;}	
+	
+	.contentWrapper_about, .contentWrapper_portfolio, .contentWrapper_small  {width: 66.667%;}
+	.contentWrapper {width: 87%;}
+}
+
+/*--- tablet ---*/
+
+@media only screen and (max-width: 1000px) {
+	body .container{ width: 91.667%; margin:0 auto;}	
+	
+	.one{ width: 33.333%; }
+	.two{ width: 33.333%; }
+	.three{ width: 33.333%; }
+	.four{ width: 33.333%; }
+	.five{ width: 100%; }
+	.six{ width: 100%; }
+	.seven{ width: 100%; }
+	.eight{ width: 100%; }
+	.nine { width: 100%; }
+	.ten { width: 100%; }
+	.eleven { width: 100%; }
+	.twelve{ width: 100%; }
+
+    /*get rid of mobile native style*/
+	input, textarea {
+    -webkit-appearance: none;
+    border-radius: 0;}
+	
+	.contentWrapper_about, .contentWrapper_portfolio, .contentWrapper_small {width: 75%; margin:0 auto;}
+	.contentWrapper {width: 100%;}
+	
+	body .pathCenter img {display: block; margin: 55px auto 0 auto; width: 260px; height: 200px;}
+    .pathCenter #pathKT {display: none;}
+}
+
+
+/*--- mobile landscape style ---*/
+@media only screen and (max-width: 767px) {
+	body .container{ width: 91.667%; margin:0 auto;}
+	
+	.one{ width: 50%; }
+	.two{ width: 50%;  }
+	.three { width: 50%; }
+	.four{ width: 100%; }
+	.five{ width: 100%; }
+	.six{ width: 100%; }
+	.seven{ width: 100%; }
+	.eight{ width: 100%; }
+	.nine { width: 100%; }
+	.ten { width: 100%; }
+	.eleven { width: 100%; }
+	.twelve{ width: 100%; }
+	
+	.one-ninth, .one-eighth, .one-seventh,.one-fifth,
+	.two-fifth, .three-fifth, .four-fifth { width: 100%; }	
+	
+	.contentWrapper_about, .contentWrapper_portfolio, .contentWrapper, .contentWrapper_small {width: 100%; }
+	.contentLeft {width: 100%;}
+	.contentRight {width: 100%;}
+	.responsive-paddingRight20, .responsive-paddingRight30 { padding-right: 0;}
+	
+	#header #logoText {display: none;}
+	
+	#firstSection .homeWelcomeText {margin-top: 125px;}
+	#firstSection .homeTitle, body .contentH1, body .archiveTitle {font-size: 2em;}
+	
+	
+	#firstSection .profilePic {margin: 50px 0 0 0;}
+	
+	body #path_blog {width: 355px; height: 135px; margin: 105px auto 0 auto;}
+	
+	.navigation .navNext, .navigation .navPrevious, .portfolioNav .previousPage, .portfolioNav .nextPage {width: 48%;}
+	
+	#footer .copyright {display: none;}
+	#footer .footerEmail {line-height: 60px; padding-top: 30px;}
+	#footer .social {text-align: center; height: 70px; padding: 0;}
+	
+}
+
+/*--- mobile portrait style ---*/
+@media only screen and (max-width: 419px) {
+	body .container{ width: 100%; padding:0 15px;}
+	
+	.one-ninth, .one-eighth, .one-seventh,.one-fifth,
+	.two-fifth, .three-fifth, .four-fifth,
+	.one, .two, .four, .five, .six, .seven,
+	.eight, .nine, .ten, .eleven, .twelve{ width: 100%; }
+    
+    .three {50%;}
+	
+		
+	
+	body #header {position: relative; padding: 30px 0 0 0; margin: 0; text-align: center; }
+	#header .flip-container {float: none;}
+	#header #logoContainer { margin: 0 auto 0 auto; width: 50px; }
+	#header .flip-container, #header .logoFront, #header .logoBack {width: 50px; height: 50px;}
+	#header #nav {margin: 25px 0 0 0; padding: 0;}
+	#header #nav ul {float: none; border-bottom: 1px solid #242424;}
+	#header #nav ul li{width: 32%; display: inline-block; margin: 0;}
+	#firstSection .homeWelcomeText {margin-top: 105px;}
+	#firstSection .homeTitle span{ border-width: 0px 0px 0px 0px;}
+	
+	#secondSection .responsive-padding { padding: 0 0;}
+	
+	body .portfolioImgOverview {margin: -90px 0 45px 0;}
+
+    body .entry-title-primary {font-size: 1.2em;}
+	body .postTitle .entry-subtitle {font-size: 0.8em;}
+	body p, body #sidebar ul li {font-size: 0.6em;}
+	form .submitBtn, 
+	body ol.commentlist li.comment .replyBtn, 
+	body .cancel-comment-reply .cancelReplyBtn { width: 100%;}
+	
+	body .contentH3 {font-size: 0.8em;}
+}
+
+/*reponsive images*/
+img {
+	max-width: 100% !important;
+    height: auto;}
+	
+	
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+	margin: 10px 0;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}	
+	
+
