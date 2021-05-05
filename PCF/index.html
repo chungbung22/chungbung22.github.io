@@ -185,7 +185,7 @@
                           <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                           <!-- <a href="https://jqueryui.com/"> -->
                           <!-- <a href="img/Style-Guide.png"> -->
-                          <a href="DME/index.html" target="_blank">
+                          <a href="DME/links/page-1-style-guide.html" target="_blank">
                             <button type="button" class="btn btn-primary btn-md waves-effect waves-light">VIEW GUIDE</button></a>
 						 <a href="prototype.html">
                             <button type="button" class="btn btn-primary btn-md waves-effect waves-light">SEE PROTOTYPES</button>
@@ -206,8 +206,7 @@
                           <!--Text-->
                           <p class="card-text">Standards for UI elements to create consistency between design and development</p>
                           <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                          <a href="UI Framework/index.html" target="_blank">
-                            <button type="button" class="btn btn-primary btn-md waves-effect waves-light">VIEW STANDARDS</button>
+                          <button type="button" class="btn btn-primary btn-md waves-effect waves-light" onClick="workInProgress()">VIEW STANDARDS</button>
                           </a>
 				
                         </div>
@@ -276,8 +275,8 @@
                           <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
                           <!-- <button type="button" class="btn btn-primary btn-md waves-effect waves-light">DEV</button> -->
                           <!-- <a href="https://bws-cm-test.web.boeing.com"><button type="button" class="btn btn-primary btn-md waves-effect waves-light">TEST</button></a> -->
-                          <a href="http://gide-sp.web.boeing.com/sites/ITPS/ES%20NWS/Functional%20Specs/Forms/New%20View.aspx" target="_blank"><button type="button" class="btn btn-primary btn-md waves-effect waves-light">VIEW SPEC</button></a>
-					    <a href="https://gide-sp.web.boeing.com/sites/ITPS/ES%20NWS/Functional%20Specs/01%20(ReqCh10)%20Configuration%20Control/01_03_06_BDSD.xlsx" target="_blank"><button type="button" class="btn btn-primary btn-md waves-effect waves-light">VIEW BDSD</button></a>
+                          <button type="button" class="btn btn-primary btn-md waves-effect waves-light" onClick="workInProgress()">VIEW SPEC</button></a>
+					    <button type="button" class="btn btn-primary btn-md waves-effect waves-light" onClick="workInProgress()">VIEW BDSD</button></a>
                         </div>
                       </div>
                       <!-- Card -->
@@ -294,8 +293,7 @@
                           <!--Text-->
                           <p class="card-text">View the design backlog, submit a UX request, or view visual defects (UX debt)</p>
                           <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                          <a href="https://gide-tfs.web.boeing.com/tfs/IT/2CES/PLM-NWS-Common/_backlogs/board/Product%20Backlog" target="_blank">
-                            <button type="button" class="btn btn-primary btn-md waves-effect waves-light">VIEW BACKLOG</button></a>
+                          <button type="button" class="btn btn-primary btn-md waves-effect waves-light" onClick="workInProgress()">VIEW BACKLOG</button></a>
                           <button type="button" class="btn btn-primary btn-md waves-effect waves-light" onclick="copyToClipboard('\\\\nw\\data\\EdWirCon\\NWS\\For\\UI\\Common_UI_for_Usability_Issues.pptx')">VIEW DEFECTS</button>
 						</div>
                       </div>
@@ -311,7 +309,9 @@
 	function copyToClipboard(text) {
 	  window.prompt("Copy and paste folder path into browser or windows explorer to access: Ctrl+C, Enter", text);
 	}
-	
+	function workInProgress() {
+		alert("This link has been disabled");
+	}
 	</script>
 
     <!-- SCRIPTS -->
