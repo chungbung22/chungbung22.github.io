@@ -668,7 +668,7 @@
 				  </div> 
 				  
 				  <div class="contentWrapper_portfolio"> 
-				  <div class="contentH3">Hazard Categorization Model</div>
+				  <div class="contentH3">Hazard Categorization Taxonomy</div>
                    <p>We created a taxonomy to categorize crowdsourced hazards into 7 categories based on research done by Jenkins and Young (2016). A set of predefined hazards within each category will be inputted to the system to help the rider identify hazards quickly. For example, gravel, rock, or sand on roads are all categorized as debris since the mitigation strategy is the same.</p>
 				   <p>We also included categories that can be relayed to the riders but aren't necessarily crowdsourced. For instance, alerts about dangerous intersections could come from accident records or city planning database, while information about traffic and generatal weather conditions are based on external data providers.</p>
 				    </div><!--end of contentWrapper_portfolio--> 
@@ -699,6 +699,77 @@
 					   <div class="dot3"></div>
 				  </div> 
 				  </div><!--end of contentWrapper_portfolio--> 
+				  
+				  <div class="contentWrapper_portfolio"> 
+				  <div class="contentH3">Voice Interaction Model</div>
+                   <p>In order to process the recorded message into a coherent format, we created a voice interaction model with 3 phases: speech recognition, natural language understanding & management, and system feedback. 
+				   <div class="marginTop30 marginBottom30">
+				     <div class="portfolioImgCenter">
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry39.png" /></div>
+					 </div>
+				  </div>
+				   <p>Speech recognition is commonly seen nowadays with platforms like Siri or Alexa, which require a clutch word to activate the system like "Skry." Next is the actual processing of a user's speech which is broken up into three steps:</p>
+				   <p>1. First it requires an agent that will be able to recognize the intent of the user. For instance, if a user wants to cancel a command, the agent will have to discern the context of the command and take the appropriate action.</p>
+				   <p>2. Then the system will have a model that will classify different keywords in the message into the different hazard categories. The classifier would be trained with the Waze dataset first to improve accuracy before moving onto rider data.</p>
+				   <p>3. Last is conversation management which Waze lacks. It reads out a list of commands, while our system allows the user to record a message. The post-ride app allows users to re-classify hazards misinterpreted by the system.</p>
+				   <p>After the system has processed a user's command, it provides system feedback to confirm it has successfully processed the command. Our system provided a visual cue through the HUD as well as an auditory reply or alert tone.</p>
+				    
+			       
+				  <div class="divider">    
+					   <div class="dot1"></div>
+					   <div class="dot2"></div>
+					   <div class="dot3"></div>
+				  </div> 
+				  </div><!--end of contentWrapper_portfolio--> 
+				  
+				  <div class="contentWrapper_portfolio"> 
+				  <div class="contentH3">Heads-Up Display</div>
+                   <p>Early on, after exhaustive research and evaluation of existing HUD for both pilots and motorcyclists, we arrived at several key design guidelines. Mainly keeping the interface extremely clean, simple, and able to get out of the way easily. Our goal was to design a minimal HUD UI that was able to effectively display multiple levels of context quickly without requiring the rider's full attention.</p>
+				   <p>In our design, the rider is normally presented with a simple gray circle just in the rider's periphery until an alert is being presented. Next we paired a colored circle with wings, which allowed us to show multiple levels of context quickly. Different colors indicated the severity of the alert (yellow=mild, red=sever, green=success, blue=system message).</p>
+				   <p>In the center of the circle, we specified the type of hazard or alert the rider was encountering with an icon. Tertiary info such as text, numbers, or other icons were presented on the wings which slid out from the sides. After the alert was over, the wings slid back in and the colored circle shrunk back into the simple gray circle.</p>
+				   </div><!--end of contentWrapper_portfolio-->
+			       <div class="marginTop30 marginBottom30">
+				     <div class="portfolioImgCenter">
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry40.png" /></div>
+					 </div>
+				  </div>
+				  <div class="divider">    
+					   <div class="dot1"></div>
+					   <div class="dot2"></div>
+					   <div class="dot3"></div>
+				  </div> 
+				  
+				  <div class="contentWrapper_portfolio"> 
+				  <div class="contentH3">Mobile Interface</div>
+                   <p>The rider interacts with the mobile app before and after the ride. It has 3 main sections: Map, Trip, and Profile. The Map section is where the rider inputs the destination and views current hazards on the road. They are able to select potential routes they might take, with the current hazards along each route shown. After they've selected a route, they will begin the navigation.</p>
+				   <p>Once the ride has been completed, they will be provided with a recap of their trip. They will also be able to fix/update their reported hazards. The trip will be saved in the Trip section, so that it can be viewed at a later date. If the rider has any settings they wish to customize, such as the frequency of alerts, they will be able to make those changes in the Profile section.</p>
+				   </div><!--end of contentWrapper_portfolio-->
+			       <div class="marginTop30 marginBottom30">
+				     <div class="portfolioImgCenter">
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry41.png" /></div>
+					 </div>
+				  </div>
+				  <div class="divider">    
+					   <div class="dot1"></div>
+					   <div class="dot2"></div>
+					   <div class="dot3"></div>
+				  </div> 
+				  <div class="contentWrapper_portfolio"> 
+				  <div class="contentH3">Moving Forward</div>
+                   <p>The next step for our Skry concept would be building a higher-fidelity prototype that integrates with an existing smart helmet like the Skully AR-1. That way we could test the system in a motorcycle simulator. Once it has sufficiently been tested in a simulator testing, we could then move onto testing on the road, although liability concerns would have to be addressed regarding safety.</p>
+				   <p>Other features that could be explored in the future are additional sensors that could be added to the bike to provide more detailed information to Skry about rider status. The current system uses sensors available on the smartphone which are limited in scope. It could also be used to send an SOS signal if the bike has been involved in an acccident and the rider is unable to call 911.</p>
+				   
+					<div class="marginTop30 marginBottom30">
+				     <div class="portfolioImgCenter">
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry42.png" /></div>
+					 </div>
+				  </div>
+				  <div class="divider">    
+					   <div class="dot1"></div>
+					   <div class="dot2"></div>
+					   <div class="dot3"></div>
+				  </div> 
+				  </div><!--end of contentWrapper_portfolio-->
    </section>
 
 </div><!--end of main-->
