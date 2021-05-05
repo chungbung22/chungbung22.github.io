@@ -489,6 +489,8 @@
 				  <div class="contentWrapper_portfolio"> 
 				  <div class="contentH3">Storyboard of Final Concept</div>
                    <p>We created a storyboard of our final concept, where the system alerts the rider of upcoming hazards and events through a mobile app connected to a rider's bluetooth headset. The rider would also be able to alert others through a recorded message. While not shown, the rider could also plan their trip and review their post-ride report through the app as well. We decided to call our concept "Skry" as it provides a look into the future.</p>
+				   
+				   </div><!--end of contentWrapper_portfolio--> 
 			       <div class="marginTop30 marginBottom30">
 				     <div class="portfolioImgCenter">
 					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry22.png" /></div>
@@ -499,7 +501,7 @@
 					   <div class="dot2"></div>
 					   <div class="dot3"></div>
 				  </div> 
-				   </div><!--end of contentWrapper_portfolio--> 
+				   
 				   
 				   <div class="contentWrapper_portfolio"> 
 				  <div class="contentH3">Prototyping and Evaluation Overview</div>
@@ -536,8 +538,8 @@
 				  <div class="contentWrapper_portfolio"> 
 				  <div class="contentH3">Evaluation #1 - Concept Walkthrough (2 participants)</div>
                    <p>The second part of the first phase was testing how users might actually interact with the system while on the road. Participants sat on their motorcycles and the facilitator walked them through a trip between two destinations using the system. Participants were asked to think-aloud during their ride and were told they did not need to report or confirm any event if they did not want to.</p>
-				   <p>1. To simulate a hazard alert, users were alerted with an audible "beep" by the facilitator and presented with an image of an icon.</p>
-				   <p>2. When a crowdsourced message was relayed, the faciliator recited the message and held up an image of the upcoming event. User's were asked to confirm or deny the existence of the event.</p>
+				   <p>1. To simulate an alert for a known hazard, users were alerted with an audible "beep" by the facilitator and presented with an image of an icon, followed by an image of the upcoming hazard.</p>
+				   <p>2. When a crowdsourced message was relayed, the faciliator recited the message and held up an image of the upcoming event. Users were asked to confirm or deny the existence of the event.</p>
 				   <p>3. For a non-reported hazard, an image of the hazard was shown without the auditory alert. If the user wished to report the hazard, they would press a button that was affixed to their motorcycle beforehand.</p>
 				   
 			       <div class="marginTop30 marginBottom30">
@@ -561,24 +563,46 @@
 				   </div><!--end of contentWrapper_portfolio--> 
 				   
 				  <div class="contentWrapper_portfolio"> 
-				  <div class="contentH3">Evaluation #2 - Concept Walkthrough (7 participants)</div>
+				  <div class="contentH3">Evaluation #2 - Concept Walkthrough (3 participants)</div>
                    <p>For the second test, we focused on constructing a wizard of oz prototype that would be more interactive, based on feedback from the first user test. Participants would be playing a motorcycle simulation game on an iPad to simulate the cognitive load of riding, and hazards and alert tones would appear in a split-screen view following our test script:</p>
 				   <p>1. Users were first given a brief demo of the system to help onboard them as to how it worked.</p>
 				   <p>2. They were expected to initiate the system we created (Skry) when reporting a hazard, by saying the clutch "Skry report."</p>
 				   <p>3. This was then followed by a confirmation tone, where the user could then record a message of the hazard they encountered.</p>
 				   <p>4. Once the message was complete, the user would then say "Skry end", which was followed by an end tone.</p>
-				   <p>5. When encountering a reported hazard, the system would provide a hazard alert tone as the user entered the hazard zone, coupled with a HUD icon of the hazard with text.</p>
-				   <p>6. After the user has exited the hazard zone, they would hear an end tone, and then be prompted after 5 seconds to confirm/deny the hazard with a confirmation tone.</p>
-				   <p>7. Once the ride was complete, the user was asked to confirm/deny hazards through an updated paper prototype.</p>
+				   <p>5. When encountering a known hazard, the system would provide an alert tone as the user entered the hazard zone, coupled with a HUD icon of the hazard.</p>
+				   <p>6. For a user-reported hazard, the system would play the recorded message after the hazard alert tone, and display a generic icon on the HUD.</p>
+				   <p>7. After the user exits the hazard zone, they would hear an end tone, and then be prompted after 5 seconds to confirm/deny the hazard with a confirmation tone.</p>
+				   <p>8. Once the ride was complete, the user was asked to confirm/deny hazards through an updated paper prototype.</p>
 				   <div class="marginTop30 marginBottom30">
 				     <div class="portfolioImgCenter">
 					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry27.png" /><p>Motorcycle simulation game on iPad</div>
-					 </div>
 					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry28.png" /><p>Split screen setup of the game and hazard alert</div>
-					 </div>
 					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry29.png" /><p>Low-fidelity paper prototype for post-ride hazard review</div>
 					 </div>
 				  </div>
+				  <p>Participants liked the idea of a crowdsourced message, but found the voice of Skry to be more trustworthy. We also learned that our riders wanted more information through the auditory channel instead of visually since it was less distracting. Participants did not feel comfortable denying hazards that can often be unseen like the presence of deer. Lastly, participants wanted to be able to see upcoming and newly reported hazards on the route while stopped.</p>
+				  <div class="divider">    
+					   <div class="dot1"></div>
+					   <div class="dot2"></div>
+					   <div class="dot3"></div>
+				  </div> 
+				   </div><!--end of contentWrapper_portfolio--> 
+				   <div class="contentWrapper_portfolio"> 
+				  <div class="contentH3">Evaluation #3 - Concept Walkthrough (4 participants)</div>
+                   <p>The final prototype evaluation followed the flow of the previous test with a few key differences:</p>
+				   <p>1. We moved from a tonal system to a conversational UI. Instead of hearing an alert tone for an upcoming hazard, the system informs the user through speech.</p>
+				   <p>2. When the participant says "skry report", skry responds back with "state hazard and location" to get more standardized responses.</p>
+				   <p>3. Natural language processing was used so all crowdsourced messages were parsed for keywords which were relayed to the rider in lieu of the real message.</p>
+				   <p>4. More functionality was added to the paper prototype so that riders could input their destination, preview upcoming hazards, and choose a route.</p>
+				   <p>5. Finally, we moved from a splitscreen view to an overlay of the HUD onto the motorcycle game using dual projectors which was more realistic.</p>
+				   <div class="marginTop30 marginBottom30">
+				     <div class="portfolioImgCenter">
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry30.png" /><p>Motorcycle simulation game on iPad</p></div>
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry31.png" /><p>Projection of the HUD overlayed with the simulation</p></div>
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry32.png" /><p>High-fidelity paper prototoype for pre- and post-ride mobile app</p></div>
+					 </div>
+				  </div>
+				  <p>We found that when users were reporting a hazard, they did not always know how to answer the question regarding the hazard location such as what side of the road it was on. Improvements would have to be to the question itself or a tutorial could be added so that users were clear what "location" meant. We also learned that users wanted to be able to report points of interest and learn more about good routes nearby.</p>
 
 				  <div class="divider">    
 					   <div class="dot1"></div>
@@ -587,7 +611,94 @@
 				  </div> 
 				   </div><!--end of contentWrapper_portfolio--> 
 				   
-
+				   <div class="contentWrapper_portfolio"> 
+				  <div class="contentH3">Introducing Skry</div>
+                   <p>Fueled through the Skry mobile app, Skry allows riders to plan their route, search for points of interest, and view/report real-time hazards. Traffic, weather, and accident data will be integrated using the Connected Citizens Program to get information from municipal providers such as Waze and Inrix. This will help provide riders more accurate information besides user reported incidents. All information is uploaded to a centralized server to avoid duplicate entries in the system.</p>
+				   
+				   <div class="marginTop30 marginBottom30">
+				     <div class="portfolioImgCenter">
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry33.png" /></div>
+					 
+					 </div>
+				  </div>
+				  <p>Unlike most systems currently available, Skry utilizes an entirely hands-free approach, allowing the rider to simply speak and the system listens. This is a focal aspect of our system, as pre-existing systems focused on a combination of touch and voice interaction, which leads to cognitive overload. This is especially true for dangerous situations where the rider wants to avoid taking their hand off the wheel after being alerted of an upcoming hazard.</p> 
+				  <div class="marginTop30 marginBottom30">
+				     <div class="portfolioImgCenter">
+				  <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry34.png" /></div>
+				  </div>
+				  </div>
+				  <p>While the primary mode of interaction is through a voice interface, a secondary HUD provides supporting information to the rider so they don't need to take their eyes off the road. The final component is the mobile app, which is used to connect the rider to the Skry system. It will sync with the HUD and speakers in the helmet through bluetooth. During the ride it will play a passive role to avoid distracting the rider. It can also be used post-ride to view a trip report or confirm/deny encountered hazards.</p>
+				  <div class="divider">    
+					   <div class="dot1"></div>
+					   <div class="dot2"></div>
+					   <div class="dot3"></div>
+				  </div> 
+				   </div><!--end of contentWrapper_portfolio--> 
+					
+				<div class="contentWrapper_portfolio"> 
+				  <div class="contentH3">Interaction Timeline - Hazard Reporting</div>
+                   <p>When the rider encounters a hazard to report, they will say "Skry Report," which places a geotag at the location within a 1/2 mile radius to create a hazard zone. The system will prompt the user to record a message, stating "Please report a hazard." This will be accompanied by a visual cue in the HUD, which will consist of a microphone icon to indicate the system is listening/recording.</p>
+				   <p>The rider will then record a message, which will be parsed for key terms using NLP to form a concise message for the next rider. For example, if the rider says, "lots of tree branches on the road, in the right lane," the system would know to classify tree branches as debris. Once the message has been recorded and 2 seconds have elapsed, Skry will state "Report Confirmed."</p>
+				    </div><!--end of contentWrapper_portfolio--> 
+			       <div class="marginTop30 marginBottom30">
+				     <div class="portfolioImgCenter">
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry35.png" /></div>
+					 </div>
+				  </div>
+				  <div class="divider">    
+					   <div class="dot1"></div>
+					   <div class="dot2"></div>
+					   <div class="dot3"></div>
+				  </div> 
+				  
+				  <div class="contentWrapper_portfolio"> 
+				  <div class="contentH3">Interaction Timeline - Hazard Alerting</div>
+                   <p>Following the previous scenario, when another rider comes along, they will receive the message "Debris up ahead, right lane" a half mile before entering the hazard zone. They will then receive another warning when they enter the hazard zone through an auditory alert and visual cue in the HUD. We chose this order so users had time to process the message and prepare a mitigation strategy.</p>
+				   <p>As they exit the hazard zone, the visual cue will disappear and they will be asked "Did you encounter the hazard?" This is to confirm whether the hazard is still there, as many hazards are time-dependent. If the user chooses not to confirm/deny, the system assumes the hazard is still there. Once the feedback is received, the system replies by saying "Thank You."</p>
+				    </div><!--end of contentWrapper_portfolio--> 
+			       <div class="marginTop30 marginBottom30">
+				     <div class="portfolioImgCenter">
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry36.png" /></div>
+					 </div>
+				  </div>
+				  <div class="divider">    
+					   <div class="dot1"></div>
+					   <div class="dot2"></div>
+					   <div class="dot3"></div>
+				  </div> 
+				  
+				  <div class="contentWrapper_portfolio"> 
+				  <div class="contentH3">Hazard Categorization Model</div>
+                   <p>We created a taxonomy to categorize crowdsourced hazards into 7 categories based on research done by Jenkins and Young (2016). A set of predefined hazards within each category will be inputted to the system to help the rider identify hazards quickly. For example, gravel, rock, or sand on roads are all categorized as debris since the mitigation strategy is the same.</p>
+				   <p>We also included categories that can be relayed to the riders but aren't necessarily crowdsourced. For instance, alerts about dangerous intersections could come from accident records or city planning database, while information about traffic and generatal weather conditions are based on external data providers.</p>
+				    </div><!--end of contentWrapper_portfolio--> 
+			       <div class="marginTop30 marginBottom30">
+				     <div class="portfolioImgCenter">
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry37.png" /></div>
+					 </div>
+				  </div>
+				  <div class="divider">    
+					   <div class="dot1"></div>
+					   <div class="dot2"></div>
+					   <div class="dot3"></div>
+				  </div> 
+				  
+				  <div class="contentWrapper_portfolio"> 
+				  <div class="contentH3">Hazard Decay Model</div>
+                   <p>We also considered the data quality in terms of time. One of the challenges that our design encountered was the issue of duplicated records. For instance, when multiple riders report the same hazard but geotag it in different locations. Then riders would have multiple alerts for the same hazard which would be annoying and dangerous. To avoid this, we generated a half-mile radius when geo-tagging. If the same hazard was reported within the established hazard zone, then the radius was increased and the reports were merged.</p>
+				   <p>As a result we came up with a hazard decay model, which would elevate or decay hazards based on frequency and duration. Hazards were first classified as unknown hazards which came from user-reported hazards, while known temporary hazards came from external databases. As more and more users reported and confirmed unknown hazards, they becamse frequent hazards, and eventually known permanent hazards. Hazards would gradually decay and be removed with time, unless enough users confirmed the hazard was no longer there.</p>
+				    
+			       <div class="marginTop30 marginBottom30">
+				     <div class="portfolioImgCenter">
+					 <div class="portfolioImgCaption"><img class="portfolioImg" src="../../wp-content/themes/CC/imgs/img_portfolio/skry38.png" /></div>
+					 </div>
+				  </div>
+				  <div class="divider">    
+					   <div class="dot1"></div>
+					   <div class="dot2"></div>
+					   <div class="dot3"></div>
+				  </div> 
+				  </div><!--end of contentWrapper_portfolio--> 
    </section>
 
 </div><!--end of main-->
