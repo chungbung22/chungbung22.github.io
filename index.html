@@ -26,6 +26,7 @@
 <link rel='dns-prefetch' href='http://ajax.googleapis.com/' />
 <link rel='dns-prefetch' href='http://platform.twitter.com/' />
 <link rel='dns-prefetch' href='http://s.w.org/' />
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 <link rel='stylesheet' id='sb_instagram_styles-css'  href='wp-content/plugins/instagram-feed/css/sb-instagram-2-2.min2f91.css?ver=2.4.6' type='text/css' media='all' />
 <link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min0606.css?ver=5.2.9' type='text/css' media='all' />
@@ -92,7 +93,20 @@
 			  
 	     });
 	});
-	
+
+<!--Scroll to Top-->	
+	$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+	});
+	$('#return-to-top').click(function() {      // When arrow is clicked
+		$('body,html').animate({
+			scrollTop : 0                       // Scroll to top of body
+		}, 500);
+	});
     </script>
     
 
@@ -105,7 +119,7 @@
 <header id="header">
    <div class="container">
                       
-                      
+                     <a href="#" id="return-to-top"><i class="icon-chevron-up"></i></a> 
                       <!-- Flipped logo -->
                       <div id="logoContainer">
                           <a href="index.html">
