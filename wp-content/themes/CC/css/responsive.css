@@ -158,6 +158,9 @@ html body{ min-width: 300px; }
 	#header #nav ul li{width: 32%; display: inline-block; margin: 0;}
 	#firstSection .homeWelcomeText {margin-top: 105px;}
 	#firstSection .homeTitle span{ border-width: 0px 0px 0px 0px;}
+	.icon-chevron-up:before {
+	margin-right: 30px;
+	}
 	
 	#secondSection .responsive-padding { padding: 0 0;}
 	
