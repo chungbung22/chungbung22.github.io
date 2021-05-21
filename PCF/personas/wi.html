@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>BWS-DME UX Homepage</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png" />
+
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template styles -->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */	
+		body
+		{
+			padding-top: 90px;
+		}
+        .btn-rounded {
+            border-radius: 10em;
+        }
+
+        .toggle-switch {
+            -moz-user-select: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .toggle-switch .ts-label {
+            min-width: 130px;
+        }
+        .toggle-switch .ts-label {
+            display: inline-block;
+            margin: 0 20px 0 0;
+            transition: color 0.56s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+            vertical-align: top;
+        }
+        label {
+            font-weight: 500;
+        }
+
+         .toggle-switch .ts-helper {
+            background: rgba(0, 0, 0, 0.26) none repeat scroll 0 0;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-block;
+            height: 16px;
+            position: relative;
+            transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+            vertical-align: middle;
+            width: 40px;
+        }
+        .toggle-switch .ts-helper::before {
+            background: #fafafa none repeat scroll 0 0;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+            content: "";
+            height: 24px;
+            left: -4px;
+            position: absolute;
+            top: -4px;
+            transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0s, background 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+            width: 24px;
+        }
+        .toggle-switch:not([data-ts-color]) input:checked:not(:disabled) + .ts-helper::before {
+            background: #d61717 none repeat scroll 0 0;
+        }
+        .toggle-switch input:checked + .ts-helper::before {
+            left: 20px;
+        }
+        .toggle-switch:not([data-ts-color]) input:checked:not(:disabled) + .ts-helper {
+            background: #f27676 none repeat scroll 0 0;
+        }
+
+
+
+        /* Tweaks to support full image size */
+        .view .full-bg-img, .view .mask {
+            padding-bottom: 2rem;
+            position: relative;
+        }
+
+        .top-nav-collapse {
+            background-color: #ff8a65 !important;
+        }
+        .navbar:not(.top-nav-collapse) {
+            background: #4286f4 !important;
+        }
+
+		.tooltip {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		.tooltip .tooltiptext {
+		  visibility: hidden;
+		  width: 140px;
+		  background-color: #555;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px;
+		  position: absolute;
+		  z-index: 1;
+		  bottom: 150%;
+		  left: 50%;
+		  margin-left: -75px;
+		  opacity: 0;
+		  transition: opacity 0.3s;
+		}
+
+		.tooltip .tooltiptext::after {
+		  content: "";
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  margin-left: -5px;
+		  border-width: 5px;
+		  border-style: solid;
+		  border-color: #555 transparent transparent transparent;
+		}
+
+		.tooltip:hover .tooltiptext {
+		  visibility: visible;
+		  opacity: 1;
+		}
+
+    </style>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+          <div class="container">
+			  <ul class="navbar-nav"> 
+              <a class="navbar-brand" href="https://bws-designs.apps.pcfpre-phx.cloud.boeing.com/#">BWS-CM</a>
+		      
+		      <a class="navbar-brand" href="">|</a>
+              <a class="navbar-brand" href="../index.html"><strong>BWS-DME</strong></a>
+			  </ul>
+			  <a style="color:white" class="navbar-text" href="../faq.html">Need Help?</a>
+    
+   			 
+          </div>
+		  
+      </nav>
+      <!--Navbar-->
+  </header>
+
+
+
+  <div class="container">
+    <div class="main-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+			 <div class="text-center" style="margin: 20pt auto 20pt auto">
+              <section>
+             		  <img class="card-img-top" src="../img/WI_Persona.png" style="width: auto">
+              </section>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	<script>
+	function copyToClipboard(text) {
+	  window.prompt("Copy and paste folder path into browser or windows explorer to access: Ctrl+C, Enter", text);
+	}
+	
+
+	</script>
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+</body>
+
+</html>
